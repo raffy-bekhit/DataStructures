@@ -26,7 +26,17 @@ public:
                 adjMatrix[i][j]=false;
         }
     }
+    //add new edges
+    void addEdge(int node1, int node2 )
+    {
+        if(node1>=0&&node2>=0&&node1<numberOfVertix&&node2<numberOfVertix)
+        {
 
+            adjMatrix[node1][node2]=true;
+            adjMatrix[node2][node1]=true;
+        }
+        else printf("One of the nodes doesn't exist.\n");
+    }
 
 };
 
