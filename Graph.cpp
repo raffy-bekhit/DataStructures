@@ -47,5 +47,13 @@ public:
         }
         else printf("One of the nodes doesn't exist.\n");
     }
+    //check if there is an edge linking two given nodes 
+    bool isEdge(int node1,int node2)
+    {
+        if(adjMatrix[node1][node2]==true) return true;
+        else false;
+        
+    }
+
 };
 
